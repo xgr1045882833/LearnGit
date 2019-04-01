@@ -4,7 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    //
+    private static final List<Integer> list=new ArrayList<>();
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -19,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
+
+        //
+        System.out.print(list);
     }
 
     /**
