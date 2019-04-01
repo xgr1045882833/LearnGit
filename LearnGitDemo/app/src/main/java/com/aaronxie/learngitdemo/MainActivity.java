@@ -10,7 +10,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     //
-    private static final List<Integer> list=new ArrayList<>();
+    //private static final List<Integer> list=new ArrayList<>();
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(stringFromJNI());
 
         //
-        System.out.print(list);
-        System.out.print(list+"");
+
     }
 
     /**
