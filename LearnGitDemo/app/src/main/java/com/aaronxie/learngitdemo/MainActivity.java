@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         //
         System.out.print(list);
-	Systme.out.print(list);
+	System.out.print(list);
     }
 
     /**
